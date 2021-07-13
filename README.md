@@ -3,6 +3,9 @@
 
 This project aimed to change the appearence of my other older page, bringing on a modern and clean interface, align to aligning to my new career objectives, the UX/UI Design area!
 
-### Technologies:
-![Used Technologies](https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.pikpng.com%2Fpngvi%2FJmwwTT_html-css-and-javascript-logo-html5-css3-js-logo-clipart%2F&psig=AOvVaw0ZPipoaHbAlKyjA_JBLKGc&ust=1626290023271000&source=images&cd=vfe&ved=0CAsQjRxqFwoTCJC-3c7g4PECFQAAAAAdAAAAABAO)
+### Used technologies:
+<img src="https://www.qweb.com.mx/wp-content/uploads/2018/06/1499794874html5-js-css3-logo-png.png" width="300px" align="center"/>
+
+### Deployed in: 
+<img src="https://firebase.google.cn/downloads/brand-guidelines/PNG/logo-standard.png?hl=pt-br" width="250px"/>
 
