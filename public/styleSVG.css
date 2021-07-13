@@ -1,0 +1,72 @@
+svg.icon,
+svg#githubIcon {
+  margin: 0 2rem;
+  transition: all 0.2s ease-in-out;
+}
+
+svg.icon .cls-1 {
+  fill: #3c3c3c;
+  transition: all 0.3s ease-in-out;
+}
+
+svg.icon .cls-2 {
+  fill: #fff;
+}
+
+svg.icon .cls-3 {
+  opacity: 0.2;
+  isolation: isolate;
+}
+
+svg.icon:hover .cls-1 {
+  fill: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+svg#githubIcon .cls-1 {
+  fill: #3c3c3c;
+  transition: all 0.3s ease-in-out;
+}
+
+svg#githubIcon .cls-2 {
+  opacity: 0.2;
+  isolation: isolate;
+}
+
+svg#githubIcon .cls-3 {
+  fill: #fff;
+}
+
+svg#githubIcon:hover .cls-1 {
+  fill: var(--primary-color);
+  transition: all 0.3s ease-in-out;
+}
+
+svg#githubIcon:hover , svg.icon:hover {
+  transform: translateY(-10px);
+  transition: all 0.2s ease-in-out;
+}
+
+@media (max-width: 1250px) {
+    svg#githubIcon, svg.icon {
+        width: 55px;
+        margin: 0 1.3rem;
+    } 
+}
+
+@media (max-width: 1100px) {
+    svg#githubIcon, svg.icon {
+        width: 50px;
+        margin: 0 1rem;
+    } 
+
+    svg#githubIcon:hover,  svg.icon:hover {
+      transform: none
+    }
+    
+    svg#githubIcon:active,  svg.icon:active{
+      transform: translateY(5px);
+      transition: all 0.2s ease;
+    }
+
+}

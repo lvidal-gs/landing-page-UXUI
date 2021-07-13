@@ -7,6 +7,7 @@
 
   <link rel="shortcut icon" href="./images/favicon.ico" type="image/x-icon">
   <link rel="stylesheet" href="./style.css">
+  <link rel="stylesheet" href="./styleSVG.css">
   <title>Lucas Vidal - Web Developer & Designer</title>
 </head>
 <body>
@@ -22,12 +23,14 @@
               Sou Desenvolvedor Web Front-end, estudante aficionado de UI/UX Design e graduando em “Análise e Desenvolvimento de Sistemas” pela FATEC São Paulo (5/6).
           </p>
           <p>
-              Quer me conhecer melhor? Minhas redes sociais estão logo abaixo. Vamos interagir!
+              Em breve esse site terá mais conteúdo, te garanto. Mas enquanto isso, quer me conhecer melhor? Minhas redes sociais estão logo abaixo. Vamos interagir!
           </p>
-          <a href="#" download type="application/pdf"><button id="cvButton">Meu curriculum</button></a>
+
+          <img id="smallDummy" src="./assets/dummy.svg" alt="Lucas Vidal vector"/>
+          <a href="./curriculo_Lucas_Vidal.pdf" download type="application/pdf"><button id="cvButton">Meu curriculum</button></a>
         </div>
       </div>
-      <img id="dummy" src="./assets/dummy.svg" alt="Lucas Vidal vector" />
+      <img id="dummy" src="./assets/dummy.svg" alt="Lucas Vidal vector"/>
     </div>
     <div id="socialMediaArea">
       <!-- WHATSAPP SVG -->
@@ -45,7 +48,7 @@
           <svg class="icon" width="65px" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128"><defs></defs><title>linkedin-icon</title><g id="Layer_2" data-name="Layer 2"><g id="Layer_1-2" data-name="Layer 1"><path class="cls-1" d="M67.59,52.37l-.48.47C67.35,52.84,67.35,52.61,67.59,52.37Z"/><path class="cls-1" d="M52.78,115.7l-21.73-21a1.06,1.06,0,0,1,.74-1.83H30.21a1.06,1.06,0,0,1-1.06-1.07V47.19h10.6a1,1,0,0,1-.76-.32l-4.24-4.26a1.05,1.05,0,0,1,.48-1.77,8.26,8.26,0,0,1-7.29-7.08c-.73-5.19,2.9-8.72,7.25-9.43a8.43,8.43,0,0,1,9.43,7.07,6.87,6.87,0,0,0-2.42-4.71L63.71,45.08A1.06,1.06,0,0,1,63,47h2.55A1.07,1.07,0,0,1,66.63,48v2.4a1.06,1.06,0,0,1,1.81-.76A1,1,0,0,1,68.57,51a3,3,0,0,0-.25.4A14.09,14.09,0,0,1,74.85,47c3.87-1.41,9.19-1.18,13.06,0a12.55,12.55,0,0,1,6.22,3.95L121.68,78a1.05,1.05,0,0,1,.32.76V91.06A64.07,64.07,0,1,0,101.29,116H53.52A1.07,1.07,0,0,1,52.78,115.7Z"/><path class="cls-2" d="M29.15,91.84a1.06,1.06,0,0,0,1.06,1.07H42.44a1.06,1.06,0,0,0,1.07-1c.15-2.61.15-9,.15-10.55V48.25a1.07,1.07,0,0,0-1.07-1.06H29.15Z"/><path class="cls-2" d="M35.19,24.33c-4.35.71-8,4.24-7.25,9.43a8.26,8.26,0,0,0,7.29,7.08,1,1,0,0,1,.39,0,10.15,10.15,0,0,0,2,0,8.34,8.34,0,0,0-2.42-16.5Z"/><path class="cls-2" d="M87.91,47c-3.87-1.18-9.19-1.41-13.06,0a14.09,14.09,0,0,0-6.53,4.48l-.73.94c-.24.24-.24.47-.48.47-.24.71.24.48-.48.48V48A1.07,1.07,0,0,0,65.56,47H53.85a1.06,1.06,0,0,0-1.06,1c-.17,6.15-.17,37.73,0,43.88a1.06,1.06,0,0,0,1.06,1H66.12a1.07,1.07,0,0,0,1.07-1c.16-4,.16-18.12.16-20.19,0-7.07.73-13,8.22-13.2,8-.47,8,6.36,8,13.2,0,1.45.19,15.7.07,19.88a1.06,1.06,0,0,0,1.07,1.09H98.3V65.81a29.88,29.88,0,0,0-2.41-12.26A20.42,20.42,0,0,0,94,50.72l.18.18A12.55,12.55,0,0,0,87.91,47Z"/><path class="cls-1" d="M122,91.06V78.74a1.05,1.05,0,0,0-.32-.76L94.13,50.9a14.36,14.36,0,0,1,1.76,2.65A29.88,29.88,0,0,1,98.3,65.81V92.67H84.69a1.06,1.06,0,0,1-1.07-1.09c.12-4.18-.07-18.43-.07-19.88,0-6.84,0-13.67-8-13.2-7.49.24-8.22,6.13-8.22,13.2,0,2.07,0,16.19-.16,20.19a1.07,1.07,0,0,1-1.07,1H53.85a1.06,1.06,0,0,1-1.06-1c-.17-6.15-.17-37.73,0-43.88a1.06,1.06,0,0,1,1.06-1H63a1.06,1.06,0,0,0,.7-1.87L42.2,26.69a6.87,6.87,0,0,1,2.42,4.71,8.37,8.37,0,0,1-7,9.43,9.49,9.49,0,0,1-2.38,0,1.05,1.05,0,0,0-.48,1.77L39,46.87a1,1,0,0,0,.76.32h2.84a1.07,1.07,0,0,1,1.07,1.06V81.36c0,1.6,0,7.94-.15,10.55a1.06,1.06,0,0,1-1.07,1H31.79a1.06,1.06,0,0,0-.74,1.83l21.73,21a1.07,1.07,0,0,0,.74.3h47.77A64.23,64.23,0,0,0,122,91.06Z"/><path class="cls-3" d="M122,91.06V78.74a1.05,1.05,0,0,0-.32-.76L94.13,50.9a14.36,14.36,0,0,1,1.76,2.65A29.88,29.88,0,0,1,98.3,65.81V92.67H84.69a1.06,1.06,0,0,1-1.07-1.09c.12-4.18-.07-18.43-.07-19.88,0-6.84,0-13.67-8-13.2-7.49.24-8.22,6.13-8.22,13.2,0,2.07,0,16.19-.16,20.19a1.07,1.07,0,0,1-1.07,1H53.85a1.06,1.06,0,0,1-1.06-1c-.17-6.15-.17-37.73,0-43.88a1.06,1.06,0,0,1,1.06-1H63a1.06,1.06,0,0,0,.7-1.87L42.2,26.69a6.87,6.87,0,0,1,2.42,4.71,8.37,8.37,0,0,1-7,9.43,9.49,9.49,0,0,1-2.38,0,1.05,1.05,0,0,0-.48,1.77L39,46.87a1,1,0,0,0,.76.32h2.84a1.07,1.07,0,0,1,1.07,1.06V81.36c0,1.6,0,7.94-.15,10.55a1.06,1.06,0,0,1-1.07,1H31.79a1.06,1.06,0,0,0-.74,1.83l21.73,21a1.07,1.07,0,0,0,.74.3h47.77A64.23,64.23,0,0,0,122,91.06Z"/><path class="cls-2" d="M35.62,40.81a1,1,0,0,0-.39,0,9.49,9.49,0,0,0,2.38,0A10.15,10.15,0,0,1,35.62,40.81Z"/><path class="cls-3" d="M35.62,40.81a1,1,0,0,0-.39,0,9.49,9.49,0,0,0,2.38,0A10.15,10.15,0,0,1,35.62,40.81Z"/><path class="cls-2" d="M95.89,53.55a14.36,14.36,0,0,0-1.76-2.65L94,50.72A20.42,20.42,0,0,1,95.89,53.55Z"/><path class="cls-3" d="M95.89,53.55a14.36,14.36,0,0,0-1.76-2.65L94,50.72A20.42,20.42,0,0,1,95.89,53.55Z"/><path class="cls-1" d="M67.11,52.84l.48-.47a3.52,3.52,0,0,1,.73-.94,3,3,0,0,1,.25-.4,1,1,0,0,0-.13-1.37,1.06,1.06,0,0,0-1.81.76v2.9C67.35,53.32,66.87,53.55,67.11,52.84Z"/><path class="cls-3" d="M67.11,52.84l.48-.47a3.52,3.52,0,0,1,.73-.94,3,3,0,0,1,.25-.4,1,1,0,0,0-.13-1.37,1.06,1.06,0,0,0-1.81.76v2.9C67.35,53.32,66.87,53.55,67.11,52.84Z"/><path class="cls-2" d="M67.59,52.37l.73-.94A3.52,3.52,0,0,0,67.59,52.37Z"/><path class="cls-3" d="M67.59,52.37l.73-.94A3.52,3.52,0,0,0,67.59,52.37Z"/></g></g></svg>
         </a>
     </div>
-    <span id="footer">todos os direitos reservados. by lucas vidal</span>
+  
   </div>
 
   <script>
@@ -60,6 +63,27 @@
     const titleTyping = document.querySelector('h1'); 
     typeWriter(titleTyping);
   </script>
+
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.7.0/firebase-app.js"></script>
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyAiVot3uRlys9gau8ylmcwLFM8DAIqVkos",
+    authDomain: "lucasvidalweb.firebaseapp.com",
+    projectId: "lucasvidalweb",
+    storageBucket: "lucasvidalweb.appspot.com",
+    messagingSenderId: "605252407967",
+    appId: "1:605252407967:web:829a56c1ee87713dc148aa"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
 </body>
 </html>
 
