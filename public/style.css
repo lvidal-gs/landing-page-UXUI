@@ -181,6 +181,7 @@ img#smallDummy {
   display: flex;
   align-items: center;
   justify-content: center;
+  animation: to-origin 1.5s ease forwards;
 }
 
 .fas-icon-style {
@@ -245,25 +246,6 @@ img#smallDummy {
 
   #textAreaPara {
     width: 600px;
-  }
-
-  button#cvButton {
-    padding: 0.7rem 1.8rem;
-    margin-top: 4rem;
-    background: var(--primary-color);
-    border-radius: 8px;
-    color: var(--font-color);
-    font-size: 1.2rem;
-    cursor: pointer;
-    outline: none;
-    box-shadow: 0 5px 0 rgb(74, 35, 153);
-    transition: all .3s ease;
-  }
-
-  button#cvButton:active {
-    transform: translateY(5px);
-    box-shadow: none;
-    transition: all .3s ease;
   }
 }
 
@@ -348,6 +330,58 @@ img#smallDummy {
 
   #headerLogo {
     margin-bottom: 20px;
+  }
+
+  button#cvButton {
+    width: 200px;
+    height: 40px;
+    padding: 0.7rem 1.8rem;
+    margin-top: 4rem;
+    background: transparent;
+    border: 1px solid var(--primary-color);
+    color: var(--font-color);
+    font-size: 1.2rem;
+    cursor: pointer;
+    position: relative;
+    outline: none;
+    transition: all 0.5s ease;
+    z-index: 0;
+  }
+  
+  button#cvButton::before {
+    content: "Meu curriculum";
+    position: absolute;
+    background: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
+    z-index: 1;
+  }
+  
+  button#cvButton::after {
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    transition: all 0.3s ease;
+    border: 1px solid var(--primary-color);
+  }
+  
+  button#cvButton:hover::before {
+    transform: translate(-7px, -7px);
+  }
+  
+  button#cvButton:hover::after {
+    transform: translate(-14px, -14px);
+    border: 1px solid #fff;
   }
 }
 
