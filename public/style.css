@@ -3,12 +3,11 @@
   src: url("./fonts/Typometry_Regular.ttf");
 }
 
-@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display&display=swap");
-
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
 }
 
 :root {
@@ -53,7 +52,7 @@ body {
 #textArea {
   display: flex;
   flex-direction: column;
-  padding-left: 12px;
+  padding-left: 2rem;
   border-left: 4px solid var(--primary-color);
   width: 900px;
   height: 100%;
@@ -81,7 +80,6 @@ h1::after {
 }
 
 p {
-  font-family: "Red Hat Display", sans-serif;
   color: var(--font-color);
   font-size: 1.3rem;
   margin: 1.2rem 0;
@@ -94,33 +92,55 @@ p:first-child {
 }
 
 button#cvButton {
+  width: 200px;
+  height: 40px;
   padding: 0.7rem 1.8rem;
   margin-top: 4rem;
   background: transparent;
-  border-radius: 8px;
+  border: 1px solid var(--primary-color);
   color: var(--font-color);
-  border: 2px solid var(--primary-color);
   font-size: 1.2rem;
-  font-family: "Red Hat Display";
   cursor: pointer;
   position: relative;
   outline: none;
+  transition: all 0.5s ease;
+  z-index: 0;
 }
 
 button#cvButton::before {
-  content: "";
+  content: "Meu curriculum";
   position: absolute;
   background: var(--primary-color);
-  width: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   height: 100%;
+  width: 100%;
   top: 0;
   left: 0;
-  transition: all 0.5s ease;
-  z-index: -1;
+  transition: all 0.3s ease;
+  z-index: 1;
+}
+
+button#cvButton::after {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  transition: all 0.3s ease;
+  border: 1px solid var(--primary-color);
 }
 
 button#cvButton:hover::before {
-  width: 100%;
+  transform: translate(-7px, -7px);
+}
+
+button#cvButton:hover::after {
+  transform: translate(-14px, -14px);
+  border: 1px solid #fff;
 }
 
 img#dummy {
@@ -146,10 +166,32 @@ img#smallDummy {
 }
 
 #footer {
-  font-family: "Red Hat Display";
   color: var(--font-color);
   font-size: 0.7rem;
   font-weight: 200;
+}
+
+.icon-link {
+  margin: 0 20px;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  transition: all .3s;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.fas-icon-style {
+  color: #fff;
+  font-size: 2.5rem;
+  transition: all .3s;
+}
+
+.icon-link:hover {
+  background-color: #63c;
+  transform: translateY(-5px);
 }
 
 @media (max-width: 1450px) {
@@ -163,7 +205,6 @@ img#smallDummy {
   }
 
   h1 {
-    font-family: Typometry;
     color: var(--font-color);
     font-weight: 200;
     font-size: 2.7rem;
@@ -189,7 +230,6 @@ img#smallDummy {
   }
 
   h1 {
-    font-family: Typometry;
     color: var(--font-color);
     font-weight: 200;
     font-size: 2.4rem;
@@ -214,7 +254,6 @@ img#smallDummy {
     border-radius: 8px;
     color: var(--font-color);
     font-size: 1.2rem;
-    font-family: "Red Hat Display", sans-serif;
     cursor: pointer;
     outline: none;
     box-shadow: 0 5px 0 rgb(74, 35, 153);
